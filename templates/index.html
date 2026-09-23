@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Locators Practice</title>
+
+    <style>
+        #h1-text {
+            color: black;
+        }
+
+        .h2-text {
+            color: red;
+        }
+
+        .h6-text {
+            color: yellow;
+        }
+
+        a {
+            color: green;
+        }
+
+        ul li::marker {
+            color: red;
+        }
+
+        ol li::marker {
+            color: red;
+        }
+
+        input:focus {
+            background-color: blue;
+        }
+
+        button:disabled {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="python">
+
+        <h1 id="h1-text">H1 text 1</h1>
+
+        <h1>H1 text 2</h1>
+
+        <h2 class="h2-text">H2 text</h2>
+
+        <h6 class="h2-text h6-text">H6 text</h6>
+
+        <p>
+            Native mobile emulation of Google Chrome for Android and
+            <span style="color: green">Mobile Safari</span>.
+            The same rendering engine works on your Desktop and in the Cloud.
+        </p>
+
+        <a
+            href="https://playwright.dev/python/"
+            target="_blank"
+        >Python</a>
+
+        <img
+            alt="browsers.png"
+            src="https://playwright.dev/python/img/logos/Browsers.png"
+            style="width: 250px"
+        >
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <form action="/action" method="POST">
+
+            <input
+                type="text"
+                name="text"
+                value="12345"
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+            >
+
+            <textarea name="message">12345</textarea>
+
+            <button type="submit" disabled>Text</button>
+
+        </form>
+
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+            </tr>
+
+            <tr>
+                <td>Row 1</td>
+                <td>Row 2</td>
+                <td>Row 3</td>
+            </tr>
+
+            <tr>
+                <td>Row 1</td>
+                <td>Row 2</td>
+                <td>Row 3</td>
+            </tr>
+        </table>
+
+        <div class="nth">
+            <p>1</p>
+            <p>2</p>
+        </div>
+
+    </div>
+
+    <div class="java-script">
+
+        <h2 class="h2-text">H2 text</h2>
+
+        <a
+            href="https://playwright.dev/python/"
+            target="_blank"
+        >JavaScript</a>
+
+    </div>
+
+    <script>
+        // Место для JavaScript.
+    </script>
+
+</body>
+</html>
