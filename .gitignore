@@ -1,0 +1,27 @@
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.idea/
+
+# Playwright и результаты тестов
+.playwright-mcp/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Данные авторизации и секреты
+.env
+.env.*
+!.env.example
+auth*.json
+storage_state*.json
+playwright/.auth/
+
+# Временные отчёты
+report.csv
