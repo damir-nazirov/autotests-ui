@@ -1,0 +1,29 @@
+name: Playwright TodoMVC tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run TodoMVC test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install pytest and pytest-playwright
+        run: python -m pip install pytest pytest-playwright
+
+      - name: Install Playwright Chromium and system dependencies
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run TodoMVC pytest
+        run: python -m pytest -v test_ai_todomvc.py
